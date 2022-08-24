@@ -19,10 +19,10 @@ def calcular_mediana(*args):
     val_central = ceil(tamanho_lista / 2) - 1
     if impar_par == 0:
         mediana = (lista[val_central] + lista[val_central + 1]) / 2
-        return f'Md = {int(mediana)}'
+        return f'Md = {mediana:.2f}'
     if impar_par == 1:
         mediana = lista[val_central]
-        return f'Md = {int(mediana)}'
+        return f'Md = {mediana:.2f}'
 
 print(calcular_mediana(6, 4, 7, 2))
 print(calcular_mediana(6, 7, 2, 1, 8, 4, 9, 11, 10))
